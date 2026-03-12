@@ -61,6 +61,8 @@ transform:scale(1.1);
 #result{
 display:none;
 margin-top:40px;
+position:relative;
+z-index:10;
 }
 
 #result img{
@@ -84,7 +86,6 @@ left:50%;
 transform:translate(-50%,-50%);
 box-shadow:0 0 20px white,0 0 40px cyan;
 }
-
 .explosion{
 position:absolute;
 width:250px;
@@ -95,8 +96,8 @@ top:50%;
 left:50%;
 transform:translate(-50%,-50%) scale(0);
 opacity:0;
+z-index:1;
 }
-
 .confetti{
 position:absolute;
 width:8px;
